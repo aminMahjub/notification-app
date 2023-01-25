@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "jakarta-sans-regular";
+  src: url(../font/PlusJakartaSans-VariableFont_wght.ttf);
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "jakarta-sans-extra";
+  src: url(../font/PlusJakartaSans-ExtraBold.ttf);
+  font-display: swap;
+  font-size: 800;
+}
+@font-face {
+  font-family: "jakarta-sans-meduim";
+  src: url(../font/PlusJakartaSans-Medium.ttf);
+  font-display: swap;
+  font-weight: 600;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+input:focus {
+  outline: 0px;
+  border: 0px;
+}
+
+body, html {
+  height: 100vh;
+  padding: 0px 1.25rem;
+  background-color: hsl(210deg, 60%, 98%);
+  font-size: 1rem;
+  font-family: "jakarta-sans-regular";
+  display: grid;
+}
+
+main {
+  width: min(100%, 43.75rem);
+  height: min(100%, 40rem);
+  margin: auto;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.6rem;
+  box-shadow: 4px 4px 17px 10px hsla(0deg, 24.2%, 70%, 0.14);
+  overflow-y: auto;
+}/*# sourceMappingURL=style.css.map */

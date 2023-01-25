@@ -1,0 +1,42 @@
+//FONT FAMILY
+$jakarta-meduim: 'jakarta-sans-meduim';
+$jakarta-regular: 'jakarta-sans-regular';
+$jakarta-extra-bold: 'jakarta-sans-extra';
+
+@font-face {
+    font-family: $jakarta-regular;
+    src: url(../font/PlusJakartaSans-VariableFont_wght.ttf);
+    font-display: swap;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: $jakarta-extra-bold;
+    src: url(../font/PlusJakartaSans-ExtraBold.ttf);
+    font-display: swap;
+    font-size: 800;
+}
+
+@font-face {
+    font-family: $jakarta-meduim;
+    src: url(../font/PlusJakartaSans-Medium.ttf);
+    font-display: swap;
+    font-weight: 600;
+}
+
+//COLORS
+$pure-white: hsl(0, 0%, 100%);
+$dark-light: hsl(210, 60%, 98%);
+$light-blue-one: hsl(211, 68%, 94%);
+$light-blue-two: hsl(205, 33%, 90%);
+$grayish-blue: hsl(219, 14%, 63%);
+$dark-blue: hsl(219, 12%, 42%);
+$absolute-dark-blue: hsl(224, 21%, 14%);
+$red: hsl(1, 90%, 64%);
+$blue: hsl(219, 85%, 26%);
+$dark-gray: hsla(0, 24.2%, 70%, 0.14);
+
+
+//MEDIA SCCREEN SIZES
+$mobile: 375px;
+$desktop: 1440px;

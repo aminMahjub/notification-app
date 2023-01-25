@@ -1,0 +1,39 @@
+@use './variables' as *;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+input:focus {
+    outline: 0px;
+    border: 0px;
+}
+
+body, html {
+    height: 100vh;
+    padding: 0px 1.25rem;
+    background-color: $dark-light;
+    font-size: 1rem;
+    font-family: $jakarta-regular;
+    display: grid;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    width: min(100%, 43.75rem);
+    height: min(100%, 40rem);
+    margin: auto;
+    background-color: $pure-white;
+    border-radius: 0.6rem;
+    box-shadow: 4px 4px 17px 10px $dark-gray;
+    overflow-y: auto;
+
