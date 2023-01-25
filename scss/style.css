@@ -38,18 +38,136 @@ body, html {
   display: grid;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 main {
   width: min(100%, 43.75rem);
   height: min(100%, 40rem);
   margin: auto;
+  padding: 1.3rem 2rem;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 0.6rem;
   box-shadow: 4px 4px 17px 10px hsla(0deg, 24.2%, 70%, 0.14);
   overflow-y: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1.3rem;
+  padding: 1.3rem 0rem;
+  background-color: hsl(0deg, 0%, 100%);
+}
+header .left-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+header .left-part h1 {
+  font-family: "jakarta-sans-extra";
+  font-size: 1.2rem;
+}
+header .left-part .notificatons-number {
+  width: 1.7rem;
+  height: 1.3rem;
+  font-size: 0.8rem;
+  background-color: hsl(219deg, 85%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mark-as-read-btn {
+  background-color: transparent;
+  color: hsl(219deg, 12%, 42%);
+  cursor: pointer;
+}
+.mark-as-read-btn:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.notifications-section {
+  overflow-y: auto;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.notification {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 1.2rem;
+}
+.notification img {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.notification article {
+  display: inherit;
+  justify-content: inherit;
+  align-items: flex-start;
+}
+.notification article .left-part {
+  margin-left: 0.8rem;
+}
+.notification article .left-part h2 {
+  font-size: 0.8rem;
+  font-family: "jakarta-sans-extra";
+  white-space: nowrap;
+}
+.notification article .left-part time {
+  font-size: 0.8rem;
+  color: hsl(219deg, 14%, 63%);
+}
+.notification article .status-message {
+  font-size: 0.8rem;
+  margin-left: 0.6rem;
+  color: hsl(219deg, 12%, 42%);
+}
+.notification article .status-message a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "jakarta-sans-extra";
+}
+.notification article .status-message a:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.new-notification {
+  background-color: hsl(206deg, 64%, 98%);
+  border-radius: 0.6rem;
+}
+.new-notification .read-dot-status {
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: hsl(1deg, 90%, 64%);
+  border-radius: 50%;
+  align-self: flex-start;
+  margin-top: 0.4rem;
+  margin: 0.3rem 0rem 0rem 0.5rem;
+}
+
+.attached-text {
+  flex-wrap: wrap;
+}
+.attached-text .attached-text-box {
+  border: 0.2px solid hsl(224deg, 21%, 14%);
+  border-radius: 0.6rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin: 1.2rem 0rem 0rem 3.5rem;
+}
+
+.attached-picture {
+  position: relative;
+}
+.attached-picture .attached-picture-box {
+  width: 2.5em;
+  height: 2.5rem;
+  position: absolute;
+  right: 0px;
 }/*# sourceMappingURL=style.css.map */

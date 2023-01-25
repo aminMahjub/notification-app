@@ -22,18 +22,151 @@ body, html {
     display: grid;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 main {
     width: min(100%, 43.75rem);
     height: min(100%, 40rem);
     margin: auto;
+    padding: 1.3rem 2rem;
     background-color: $pure-white;
     border-radius: 0.6rem;
     box-shadow: 4px 4px 17px 10px $dark-gray;
     overflow-y: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: -1.3rem;
+    padding: 1.3rem 0rem;
+    background-color: $pure-white;
+
+    .left-part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6rem;
+    
+        h1 {
+            font-family: $jakarta-extra-bold;
+            font-size: 1.2rem;
+        }
+    
+        .notificatons-number {
+            width: 1.7rem;
+            height: 1.3rem;
+            font-size: 0.8rem;
+            background-color: $blue;
+            color: $pure-white;
+            border-radius: 0.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
+    }
+}
+
+.mark-as-read-btn {
+    background-color: transparent;
+    color: $dark-blue;
+    cursor: pointer;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.notifications-section {
+    overflow-y: auto;
+    display: grid;
+    gap: 0.4rem;
+}
+
+.notification {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 1.2rem;
+
+    img {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    article {
+        display: inherit;
+        justify-content: inherit;
+        align-items: flex-start;
+
+        .left-part {
+            margin-left: 0.8rem;
+
+            h2 {
+                font-size: 0.8rem;
+                font-family: $jakarta-extra-bold;
+                white-space: nowrap;
+            }
+
+            time {
+                font-size: 0.8rem;
+                color: $grayish-blue;
+            }
+        }
+
+        .status-message {
+            font-size: 0.8rem;
+            margin-left: 0.6rem;
+            color: $dark-blue;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                font-family: $jakarta-extra-bold;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+.new-notification {
+    background-color: $light-blue;
+    border-radius: 0.6rem;
+
+    .read-dot-status {
+        width: 0.4rem;
+        height: 0.4rem;
+        background-color: $red;
+        border-radius: 50%;
+        align-self: flex-start;
+        margin-top: 0.4rem;
+        margin: 0.3rem 0rem 0rem 0.5rem;
+    }
+}
+
+.attached-text {
+    flex-wrap: wrap;
+
+    .attached-text-box {
+        border: 0.2px solid $absolute-dark-blue;
+        border-radius: 0.6rem;
+        padding: 1rem;
+        font-size: 0.9rem;
+        margin: 1.2rem 0rem 0rem 3.5rem;
+    }
+}
+
+.attached-picture {
+    position: relative;
+
+    .attached-picture-box {
+        width: 2.5em;
+        height: 2.5rem;
+        position: absolute;
+        right: 0px;
+    }
 }
