@@ -38,6 +38,12 @@ body, html {
   display: grid;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 main {
   width: min(100%, 43.75rem);
   height: min(100%, 40rem);
