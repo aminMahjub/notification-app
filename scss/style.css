@@ -107,34 +107,34 @@ header .left-part .notificatons-number {
   height: 2.8rem;
 }
 .notification article {
-  display: inherit;
-  justify-content: inherit;
-  align-items: flex-start;
+  margin-left: 0.8rem;
 }
 .notification article .left-part {
-  margin-left: 0.8rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 .notification article .left-part h2 {
   font-size: 0.8rem;
   font-family: "jakarta-sans-extra";
   white-space: nowrap;
 }
-.notification article .left-part time {
-  font-size: 0.8rem;
-  color: hsl(219deg, 14%, 63%);
-}
-.notification article .status-message {
+.notification article .left-part .status-message {
   font-size: 0.8rem;
   margin-left: 0.6rem;
   color: hsl(219deg, 12%, 42%);
 }
-.notification article .status-message a {
+.notification article .left-part .status-message a {
   text-decoration: none;
   color: inherit;
   font-family: "jakarta-sans-extra";
 }
-.notification article .status-message a:hover {
+.notification article .left-part .status-message a:hover {
   color: hsl(219deg, 85%, 26%);
+}
+.notification article time {
+  font-size: 0.8rem;
+  color: hsl(219deg, 14%, 63%);
 }
 
 .new-notification {
@@ -146,9 +146,8 @@ header .left-part .notificatons-number {
   height: 0.4rem;
   background-color: hsl(1deg, 90%, 64%);
   border-radius: 50%;
-  align-self: flex-start;
-  margin-top: 0.4rem;
   margin: 0.3rem 0rem 0rem 0.5rem;
+  display: inline-block;
 }
 
 .attached-text {

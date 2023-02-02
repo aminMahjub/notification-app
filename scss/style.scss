@@ -96,12 +96,12 @@ header {
     }
 
     article {
-        display: inherit;
-        justify-content: inherit;
-        align-items: flex-start;
-
+        margin-left: 0.8rem;
+        
         .left-part {
-            margin-left: 0.8rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
 
             h2 {
                 font-size: 0.8rem;
@@ -109,26 +109,26 @@ header {
                 white-space: nowrap;
             }
 
-            time {
+            .status-message {
                 font-size: 0.8rem;
-                color: $grayish-blue;
+                margin-left: 0.6rem;
+                color: $dark-blue;
+    
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    font-family: $jakarta-extra-bold;
+    
+                    &:hover {
+                        color: $blue;
+                    }
+                }
             }
         }
 
-        .status-message {
+        time {
             font-size: 0.8rem;
-            margin-left: 0.6rem;
-            color: $dark-blue;
-
-            a {
-                text-decoration: none;
-                color: inherit;
-                font-family: $jakarta-extra-bold;
-
-                &:hover {
-                    color: $blue;
-                }
-            }
+            color: $grayish-blue;   
         }
     }
 }
@@ -142,9 +142,8 @@ header {
         height: 0.4rem;
         background-color: $red;
         border-radius: 50%;
-        align-self: flex-start;
-        margin-top: 0.4rem;
         margin: 0.3rem 0rem 0rem 0.5rem;
+        display: inline-block;
     }
 }
 
